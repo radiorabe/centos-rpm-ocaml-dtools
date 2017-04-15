@@ -1,11 +1,11 @@
 Name:     ocaml-dtools
 
-Version:  0.3.2
+Version:  0.3.3
 Release:  1
 Summary:  OCAML daemon tools
 License:  GPLv2+
 URL:      https://github.com/chambart/ocaml-dtools
-Source0:  https://github.com/savonet/ocaml-dtools/releases/download/0.3.2/ocaml-dtools-0.3.2.tar.gz
+Source0:  https://github.com/savonet/ocaml-dtools/releases/download/%{version}/ocaml-dtools-%{version}.tar.gz
 
 BuildRequires: ocaml
 BuildRequires: ocaml-findlib
@@ -39,5 +39,8 @@ make install
 OCaml modules for writing daemons
 
 %changelog
+* Sat Apr 15 2017 Lucas Bickel <hairmare@rabe.ch>
+- Bump to next version
+
 * Sun Jul  3 2016 Lucas Bickel <hairmare@rabe.ch>
 - initial version
