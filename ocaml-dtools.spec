@@ -1,6 +1,6 @@
 Name:     ocaml-dtools
 
-Version:  0.3.3
+Version:  0.3.4
 Release:  1
 Summary:  OCAML daemon tools
 License:  GPLv2+
@@ -9,9 +9,7 @@ Source0:  https://github.com/savonet/ocaml-dtools/releases/download/%{version}/o
 
 BuildRequires: ocaml
 BuildRequires: ocaml-findlib
-BuildRequires: ocaml-bytes
 BuildRequires: pcre-ocaml
-Requires:      ocaml-bytes
 Requires:      pcre-ocaml
 
 %prep
