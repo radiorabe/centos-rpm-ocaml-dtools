@@ -1,7 +1,7 @@
 Name:     ocaml-dtools
 
-Version:  0.3.4
-Release:  1
+Version:  0.4.1
+Release:  0.0%{dist}
 Summary:  OCAML daemon tools
 License:  GPLv2+
 URL:      https://github.com/chambart/ocaml-dtools
@@ -9,8 +9,8 @@ Source0:  https://github.com/savonet/ocaml-dtools/releases/download/%{version}/o
 
 BuildRequires: ocaml
 BuildRequires: ocaml-findlib
-BuildRequires: pcre-ocaml
-Requires:      pcre-ocaml
+BuildRequires: ocaml-pcre-devel
+Requires:      ocaml-pcre
 
 %prep
 %setup -q 
@@ -37,8 +37,11 @@ make install
 OCaml modules for writing daemons
 
 %changelog
-* Sat Apr 15 2017 Lucas Bickel <hairmare@rabe.ch>
+* Sun Nov 11 2018 Lucas Bickel <hairmare@rabe.ch> - 0.4.1-0.0
+- Initial build for pcre-ocaml package bump
+
+* Sat Apr 15 2017 Lucas Bickel <hairmare@rabe.ch> - 0.3.4-1
 - Bump to next version
 
-* Sun Jul  3 2016 Lucas Bickel <hairmare@rabe.ch>
+* Sun Jul  3 2016 Lucas Bickel <hairmare@rabe.ch> - 0.3.0-1
 - initial version
