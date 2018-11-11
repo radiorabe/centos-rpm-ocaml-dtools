@@ -1,7 +1,9 @@
+%define debug_package %{nil}
+
 Name:     ocaml-dtools
 
 Version:  0.4.1
-Release:  0.0%{dist}
+Release:  0.1%{dist}
 Summary:  OCAML daemon tools
 License:  GPLv2+
 URL:      https://github.com/chambart/ocaml-dtools
@@ -37,6 +39,9 @@ make install
 OCaml modules for writing daemons
 
 %changelog
+* Sun Nov 11 2018 Lucas Bickel <hairmare@rabe.ch> - 0.4.1-0.1
+- Fix Fedora build
+
 * Sun Nov 11 2018 Lucas Bickel <hairmare@rabe.ch> - 0.4.1-0.0
 - Initial build for pcre-ocaml package bump
 
